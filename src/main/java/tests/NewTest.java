@@ -1,5 +1,6 @@
 package tests;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -13,8 +14,11 @@ public class NewTest {
 
 	@Test
 	public void openMyBlog() {
-		driver.get("https://www.google.com/search?q=uikh&ie=utf-8&oe=utf-8&client=firefox-b-ab");
-
+		driver.get(
+				"https://accounts-dev.netgear.com/login?redirectUrl=https:%2F%2Fsampleapp1.accounts-qa.netgear.com%2F");
+		String str = driver.findElement(By.id("Login-btn")).getText();
+		Listner list = new Listner();
+		list.reportPass("Test Pass", "string test" + str);
 	}
 
 	@BeforeClass

@@ -16,7 +16,7 @@ import generic.Listner;
 public class NewTest {
 
 	public WebDriver driver;
-	Listner list = new Listner();
+	Listner list1; 
 
 	@Test
 	public void openMyBlog() {
@@ -25,7 +25,8 @@ public class NewTest {
 					"https://accounts-dev.netgear.com/login?redirectUrl=https:%2F%2Fsampleapp1.accounts-qa.netgear.com%2F");
 			String str = driver.findElement(By.id("Login-btn")).getText();
 			System.out.println(str);
-			list.reportPass("Heyy", "Hyy bro" + str);
+			list1= new Listner();
+			list1.reportPass("Heyy", "Hyy bro" + str);
 
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

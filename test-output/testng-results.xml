@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="14450" started-at="2019-07-10T09:46:47Z" finished-at="2019-07-10T09:47:02Z">
+  <suite name="Suite" duration-ms="59036" started-at="2019-07-10T16:16:33Z" finished-at="2019-07-10T16:17:32Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="14450" started-at="2019-07-10T09:46:47Z" finished-at="2019-07-10T09:47:02Z">
+    <test name="Test" duration-ms="59036" started-at="2019-07-10T16:16:33Z" finished-at="2019-07-10T16:17:32Z">
       <class name="tests.NewTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:tests.NewTest@51efea79]" name="beforeClass" is-config="true" duration-ms="9063" started-at="2019-07-10T15:16:48Z" finished-at="2019-07-10T15:16:57Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:tests.NewTest@724af044]" name="beforeClass" is-config="true" duration-ms="11523" started-at="2019-07-10T21:46:33Z" finished-at="2019-07-10T21:46:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="openMyBlog()[pri:0, instance:tests.NewTest@51efea79]" name="openMyBlog" duration-ms="2723" started-at="2019-07-10T15:16:57Z" finished-at="2019-07-10T15:16:59Z">
+        <test-method status="PASS" signature="openMyBlog()[pri:0, instance:tests.NewTest@724af044]" name="openMyBlog" duration-ms="36443" started-at="2019-07-10T21:46:45Z" finished-at="2019-07-10T21:47:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openMyBlog -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.NewTest@51efea79]" name="afterClass" is-config="true" duration-ms="2652" started-at="2019-07-10T15:16:59Z" finished-at="2019-07-10T15:17:02Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.NewTest@724af044]" name="afterClass" is-config="true" duration-ms="11021" started-at="2019-07-10T21:47:21Z" finished-at="2019-07-10T21:47:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

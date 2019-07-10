@@ -1,6 +1,6 @@
 package tests;
 
-import org.testng.Reporter;
+
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -19,7 +19,7 @@ public class Listner
 
 	public Listner() {
 
-		reporter = new ExtentHtmlReporter("test.html");
+		reporter = new ExtentHtmlReporter("./test.html");
 		reporter.setAppendExisting(true);
 		extent = new ExtentReports();
 
@@ -59,9 +59,7 @@ public class Listner
 		extent.attachReporter(reporter);
 
 		ExtentTest logger2 = extent.createTest(testName);
-		// logger2.log(Status.INFO, MarkupHelper.createLabel("Sun",
-		// ExtentColor.BLUE));
-		// logger2.assignCategory(category);
+	
 		logger2.log(Status.INFO, category);
 		logger2.log(Status.FAIL, MarkupHelper.createLabel("Fail", ExtentColor.RED));
 		extent.flush();

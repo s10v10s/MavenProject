@@ -14,11 +14,18 @@ public class NewTest {
 
 	@Test
 	public void openMyBlog() {
-		driver.get(
-				"https://accounts-dev.netgear.com/login?redirectUrl=https:%2F%2Fsampleapp1.accounts-qa.netgear.com%2F");
-		String str = driver.findElement(By.id("Login-btn")).getText();
-		Listner list = new Listner();
-		list.reportPass("Test Pass", "string test" + str);
+		try {
+			driver.get(
+					"https://accounts-dev.netgear.com/login?redirectUrl=https:%2F%2Fsampleapp1.accounts-qa.netgear.com%2F");
+			Thread.sleep(20000);
+			String str = driver.findElement(By.id("Login-btn")).getText();
+			System.out.println(str);
+			Listner list = new Listner();
+			list.reportPass("Test Pass", "string test" + str);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	@BeforeClass

@@ -16,7 +16,7 @@ import generic.Listner;
 public class NewTest {
 
 	public WebDriver driver;
-	Listner list1; 
+	Listner list1;
 
 	@Test
 	public void openMyBlog() {
@@ -26,7 +26,7 @@ public class NewTest {
 			Thread.sleep(20000);
 			String str = driver.findElement(By.id("Login-btn")).getText();
 			System.out.println(str);
-			list1= new Listner();
+			list1 = new Listner();
 			list1.reportPass("Heyy", "Hyy bro" + str);
 			Thread.sleep(5000);
 			driver.close();
@@ -47,6 +47,7 @@ public class NewTest {
 
 	@AfterClass
 	public void afterClass() {
+		System.out.println("Hi This dummy project done for jenkins--------");
 		driver.quit();
 	}
 

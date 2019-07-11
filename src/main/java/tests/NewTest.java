@@ -23,12 +23,13 @@ public class NewTest {
 		try {
 			driver.get(
 					"https://accounts-dev.netgear.com/login?redirectUrl=https:%2F%2Fsampleapp1.accounts-qa.netgear.com%2F");
-			Thread.sleep(30000);
+			Thread.sleep(20000);
 			String str = driver.findElement(By.id("Login-btn")).getText();
 			System.out.println(str);
 			list1= new Listner();
 			list1.reportPass("Heyy", "Hyy bro" + str);
-
+			Thread.sleep(5000);
+			driver.close();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

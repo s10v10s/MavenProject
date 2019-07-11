@@ -23,6 +23,7 @@ public class NewTest {
 		try {
 			driver.get(
 					"https://accounts-dev.netgear.com/login?redirectUrl=https:%2F%2Fsampleapp1.accounts-qa.netgear.com%2F");
+			Thread.sleep(30000);
 			String str = driver.findElement(By.id("Login-btn")).getText();
 			System.out.println(str);
 			list1= new Listner();

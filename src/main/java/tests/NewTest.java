@@ -48,7 +48,7 @@ public class NewTest {
 	@AfterClass
 	public void afterClass() {
 		System.out.println("Hi This dummy project done for jenkins--------");
-		driver.quit();
+		
 	}
 
 }
